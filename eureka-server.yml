@@ -1,6 +1,16 @@
 server:
   port: 1111   # HTTP port
 
+management:
+  context-path: /admin
+  
+logging:
+  file: logs/${spring.application.name}.log
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'DEBUG'
+    com.atsistemas: 'DEBUG'
+
 # Configure this Discovery Server
 eureka:
   instance:
@@ -14,5 +24,3 @@ spring:
   thymeleaf:
     enabled: false     # Disable Thymeleaf 
 
-logging:
-  file: logs/${spring.application.name}.log
