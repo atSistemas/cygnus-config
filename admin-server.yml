@@ -1,0 +1,24 @@
+# HTTP Server
+server:
+  port: 9999   # HTTP port
+  
+# Discovery Server Access
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://discovery-server:1111/eureka/
+#eureka.instance.client.serviceUrl.defaultZone: http://discovery-server:1111/eureka/
+
+eureka:
+  client:
+    #registerWithEureka: false
+    #fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://discovery-server:1111/eureka/
+  instance:
+     preferIpAddress: true
+
+
+
+
+
