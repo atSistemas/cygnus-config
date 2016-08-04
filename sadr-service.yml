@@ -1,7 +1,17 @@
 # HTTP Server
 server:
   port: 0   # HTTP port
+ 
+management:
+  context-path: /admin
   
+logging:
+  file: logs/${spring.application.name}.log
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'DEBUG'
+    com.atsistemas: 'DEBUG'
+
 # Discovery Server Access
 eureka:
   client:
