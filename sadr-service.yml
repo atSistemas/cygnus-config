@@ -8,12 +8,6 @@ eureka:
     serviceUrl:
       defaultZone: http://discovery-server:1111/eureka/
 
-# Spring properties
-spring:
-  thymeleaf:
-    cache: false             # Allow Thymeleaf templates to be reloaded at runtime
-    prefix: classpath:/templates/    # Trailing / mandatory # Template location for this application only
-
 logging:
   file: logs/${spring.application.name}.log
   level:
