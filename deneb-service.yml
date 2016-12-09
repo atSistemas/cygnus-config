@@ -1,6 +1,6 @@
 # HTTP Server
 server:
-  port: 0   # HTTP port
+  port: ${PORT:2222}   # HTTP port
   
 # Discovery Server Access
 eureka:
@@ -8,21 +8,12 @@ eureka:
     serviceUrl:
       defaultZone: http://discovery-server:1111/eureka/
 
-# Spring properties
-spring:
-  thymeleaf:
-    cache: false             # Allow Thymeleaf templates to be reloaded at runtime
-    prefix: classpath:/templates/    # Trailing / mandatory # Template location for this application only
-
-# Map the error path to error template (for Thymeleaf)
-error:
-  path: /templates/error
-
 logging:
   file: logs/${spring.application.name}.log
   level:
     com.netflix.discovery: 'OFF'
-    org.springframework.cloud: 'DEBUG'
+    org.springframework.cloud: 'INFO'
+    org.springframework.web: 'INFO'
     com.atsistemas: 'DEBUG'
 
 

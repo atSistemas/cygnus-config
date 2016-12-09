@@ -1,11 +1,12 @@
 server:
-  port: 1111   # HTTP port
+  port: ${PORT:1111}   # HTTP port
   
 logging:
   file: logs/${spring.application.name}.log
   level:
     com.netflix.discovery: 'OFF'
-    org.springframework.cloud: 'DEBUG'
+    org.springframework.cloud: 'INFO'
+    org.springframework.web: 'INFO'
     com.atsistemas: 'DEBUG'
 
 # Configure this Discovery Server

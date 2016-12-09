@@ -1,6 +1,6 @@
 # HTTP Server
 server:
-  port: 0   # HTTP port
+  port: ${PORT:3333}   # HTTP port
 
 # Discovery Server Access
 eureka:
@@ -12,5 +12,6 @@ logging:
   file: logs/${spring.application.name}.log
   level:
     com.netflix.discovery: 'OFF'
-    org.springframework.cloud: 'DEBUG'
+    org.springframework.cloud: 'INFO'
+    org.springframework.web: 'INFO'
     com.atsistemas: 'DEBUG'
