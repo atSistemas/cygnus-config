@@ -16,4 +16,7 @@ logging:
     org.springframework.web: 'INFO'
     com.atsistemas: 'DEBUG'
 
-
+cygnus:
+  sadr:
+    name: sadr-service
+    pingUrl: http://${cygnus.sadr.name}/sadr/ping/
