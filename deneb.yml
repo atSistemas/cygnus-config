@@ -6,7 +6,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://discovery-server:1111/eureka/
+      defaultZone: ${EUREKA_ENDPOINT}
 
 logging:
   file: logs/${spring.application.name}.log
@@ -20,3 +20,12 @@ cygnus:
   sadr:
     name: sadr-service
     pingUrl: http://${cygnus.sadr.name}/sadr/ping/
+    pingUrl: pepe1
+
+spring:
+   rabbitmq:
+     host: rabbitmq
+     port: 5672
+     username: guest
+     password: guest
+
