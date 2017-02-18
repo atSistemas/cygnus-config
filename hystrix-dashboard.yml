@@ -1,7 +1,7 @@
 # HTTP Server
 server:
-  port: ${PORT:2222}   # HTTP port
-  
+  port: ${HYSTRIX_DASHBOARD_PORT:9000}   # HTTP port
+
 # Discovery Server Access
 eureka:
   client:
@@ -15,16 +15,3 @@ logging:
     org.springframework.cloud: 'INFO'
     org.springframework.web: 'INFO'
     com.atsistemas: 'DEBUG'
-
-cygnus:
-  sadr:
-    name: sadr
-    pingUrl: http://${cygnus.sadr.name}/sadr/ping/test
-
-spring:
-   rabbitmq:
-     host: rabbitmq
-     port: 5672
-     username: guest
-     password: guest
-
