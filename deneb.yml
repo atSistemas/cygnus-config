@@ -1,7 +1,7 @@
 # HTTP Server
 server:
   port: ${PORT:2222}   # HTTP port
-  
+
 # Discovery Server Access
 eureka:
   client:
@@ -19,7 +19,7 @@ logging:
 cygnus:
   sadr:
     name: sadr
-    pingUrl: http://${cygnus.sadr.name}/sadr/ping/test
+    pingUrl: http://${cygnus.sadr.name}/ping/
 
 spring:
    rabbitmq:
@@ -27,4 +27,3 @@ spring:
      port: 5672
      username: guest
      password: guest
-
