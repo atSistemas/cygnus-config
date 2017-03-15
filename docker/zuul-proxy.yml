@@ -18,8 +18,8 @@ eureka:
     serviceUrl:
       defaultZone: ${EUREKA_ENDPOINT}
 
-#zuul:
-#  routes:
-#    sadr: /sadr/**
-#    deneb: /deneb/**
-#    zuulserver: /self/**
+zuul:
+  routes:
+    sadr: /sadr/**
+    deneb: /deneb/**
+    zuulserver: /self/**
