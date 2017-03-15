@@ -1,6 +1,9 @@
 # HTTP Server
 server:
-  port: ${PORT:2222}
+  port: ${PORT:3333}
+
+management:
+  context-path: /sadr
 
 management:
   security:
@@ -16,18 +19,6 @@ logging:
   file: logs/${spring.application.name}.log
   level:
     com.netflix.discovery: 'OFF'
-    org.springframework.cloud: 'DEBUG'
+    org.springframework.cloud: 'INFO'
     org.springframework.web: 'INFO'
     com.atsistemas: 'DEBUG'
-
-cygnus:
-  sadr:
-    name: sadr
-    pingUrl: http://${cygnus.sadr.name}/ping/x
-
-spring:
-   rabbitmq:
-     host: rabbitmq
-     port: 5672
-     username: guest
-     password: guest
