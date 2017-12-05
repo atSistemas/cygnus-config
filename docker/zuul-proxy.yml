@@ -22,4 +22,4 @@ zuul:
   routes:
     sadr: /sadr/**
     deneb: /deneb/**
-    zuulserver: /self/**
+    zuul-proxy: /self/**
