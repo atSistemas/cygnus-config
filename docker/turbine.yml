@@ -1,6 +1,6 @@
 # HTTP Server
 server:
-  port: ${TURBINE_PORT:8989}
+  port: ${DEFAULT_PORT:8989}
 
 management:
   security:

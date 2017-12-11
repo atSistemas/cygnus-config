@@ -1,6 +1,6 @@
 # HTTP Server
 server:
-  port: ${PORT:2222}
+  port: ${DEFAULT_PORT:2222}
 
 management:
   security:

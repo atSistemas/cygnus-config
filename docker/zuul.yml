@@ -1,5 +1,5 @@
 server:
-  port: ${ZUUL_PORT:8080}
+  port: ${DEFAULT_PORT:8080}
 
 management:
   security:

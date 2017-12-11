@@ -1,6 +1,6 @@
 # HTTP Server
 server:
-  port: ${ADMIN_SERVER_PORT:9999}
+  port: ${DEFAULT_PORT:9999}
 
 management:
   security:

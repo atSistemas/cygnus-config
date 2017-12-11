@@ -1,6 +1,6 @@
 # HTTP Server
 server:
-  port: ${HYSTRIX_DASHBOARD_PORT:9000}
+  port: ${DEFAULT_PORT:9000}
 
 management:
   security:
