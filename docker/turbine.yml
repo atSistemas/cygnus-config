@@ -3,6 +3,7 @@ server:
   port: ${DEFAULT_PORT:8989}
 
 management:
+  port: -1
   security:
     enabled: false
 
@@ -26,3 +27,10 @@ eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_ENDPOINT}
+
+spring:
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
