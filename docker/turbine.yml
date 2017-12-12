@@ -15,9 +15,11 @@ logging:
     com.atsistemas: 'DEBUG'
 
 turbine:
+  clusterNameExpression: new String("CYGNUS")
   aggregator:
     clusterConfig: CYGNUS
-  appConfig: deneb
+  appConfig: DENEB
+  InstanceMonitor.eventStream.skipLineLogic.enabled: false
 
 # Discovery Server Access
 eureka:
